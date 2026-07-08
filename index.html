@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCO — Traore Cheick Oumar | BTP & Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+ 
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-letters">
+    <span>T</span><span>C</span><span>O</span>
+  </div>
+</div>
+
+<!-- Progress bar -->
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">T<span>C</span>O</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#process">Méthode</a></li>
+  </ul>
+  <a href="#devis" class="nav-cta">Devis gratuit</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services"  onclick="closeMobile()">Services</a>
+  <a href="#about"     onclick="closeMobile()">À propos</a>
+  <a href="#projets"   onclick="closeMobile()">Projets</a>
+  <a href="#process"   onclick="closeMobile()">Méthode</a>
+  <a href="#devis"     onclick="closeMobile()">Devis gratuit</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Bâtisseur de confiance</div>
+    <h1 class="hero-name">
+      Traore<br>Cheick<br><span class="accent">Oumar</span>
+    </h1>
+    <p class="hero-desc">
+      Expert BTP basé en Côte d'Ivoire. Construction, architecture, suivi de chantier et estimations précises — de la conception à la livraison.
+    </p>
+    <div class="hero-actions">
+      <a href="#projets"  class="btn-primary">Voir les projets</a>
+      <a href="#devis"    class="btn-outline">Demander un devis</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat reveal">
+        <div class="stat-number" data-count="4">0</div>
+        <div class="stat-label">Ans d'expérience</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="15">0</div>
+        <div class="stat-label">Projets livrés</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-label">% Satisfaction</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-grid"></div>
+    <div class="hero-bg-tco">TCO</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">Ce que je fais</div>
+  <h2 class="section-title reveal">Mes domaines<br>d'expertise</h2>
+  <p class="section-sub reveal">
+    Une approche complète des Bâtiments et Travaux Publics — du plan initial jusqu'à la remise des clés.
+  </p>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <div class="service-icon">🏗️</div>
+      <div class="service-name">Construction</div>
+      <p class="service-desc">Maisons individuelles, immeubles résidentiels, bâtiments commerciaux. Suivi rigoureux des normes de sécurité et de qualité à chaque étape.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">02</span>
+      <div class="service-icon">📐</div>
+      <div class="service-name">Architecture</div>
+      <p class="service-desc">Conception de plans et études architecturales adaptés à vos besoins. Rendu 3D, permis de construire et validation technique.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">03</span>
+      <div class="service-icon">🔎</div>
+      <div class="service-name">Suivi de travaux</div>
+      <p class="service-desc">Contrôle de chantier, coordination des corps de métiers, respect des délais et gestion des prestataires sur site.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">04</span>
+      <div class="service-icon">📊</div>
+      <div class="service-name">Devis & Estimations</div>
+      <p class="service-desc">Quantitatifs précis, analyse des coûts, études de faisabilité. Des chiffrages fiables pour budgétiser votre projet sans surprise.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">05</span>
+      <div class="service-icon">🛠️</div>
+      <div class="service-name">Rénovation</div>
+      <p class="service-desc">Travaux de réhabilitation, restructuration intérieure, rénovation énergétique et mise aux normes de bâtiments existants.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-num">06</span>
+      <div class="service-icon">📋</div>
+      <div class="service-name">Conseil & Expertise</div>
+      <p class="service-desc">Diagnostic technique, expertise bâtiment, audit de chantier et conseil stratégique pour maîtres d'ouvrage publics et privés.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-corner tl"></div>
+    <div class="about-corner br"></div>
+    <div class="about-placeholder">
+       <img src="assets/img/profilecheick.png" alt="Traore Cheick Oumar — Ingénieur BTP" loading="lazy" onerror="this.style.display='none'" />
+      <div class="about-placeholder-label">Traore Cheick Oumar<br>Ingénieur BTP</div>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="section-label">À propos</div>
+    <h2 class="section-title reveal">Bâtir avec<br>méthode & passion</h2>
+    <p class="section-sub reveal">
+      Avec plus de 4 ans d'expérience dans le secteur du BTP, je maîtrise chaque phase d'un projet de construction — de l'esquisse au gros œuvre, en passant par les finitions. Mon approche allie rigueur technique, écoute du client et respect des budgets.
+    </p>
+    <div class="skills-list reveal">
+      <span class="skill-tag">AutoCAD</span>
+      <span class="skill-tag">Archi BIM</span>
+      <span class="skill-tag">Gestion de chantier</span>
+      <span class="skill-tag">Béton armé</span>
+      <span class="skill-tag">VRD</span>
+      <span class="skill-tag">Métrés</span>
+      <span class="skill-tag">MS Project</span>
+      <span class="skill-tag">CCTP</span>
+    </div>
+    <a href="#devis" class="btn-primary reveal">Travailler ensemble</a>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets">
+  <div class="section-label">Réalisations</div>
+  <h2 class="section-title reveal">Projets récents</h2>
+  <p class="section-sub reveal">
+    Une sélection de chantiers livrés — chaque projet est unique et traité avec le même niveau d'exigence.
+  </p>
+  <div class="projets-grid">
+    <div class="projet-card reveal">
+      <div class="projet-img">
+        <span class="projet-img-icon"><img src="assets/img/construction1.png" alt="imageconstruction">🏠</span>
+        <span class="projet-tag">Résidentiel</span>
+      </div>
+      <div class="projet-body">
+        <div class="projet-name">Villa</div>
+        <p class="projet-desc">Construction d'une villa contemporaine de 320 m². Suivi complet de l'étude de sol à la réception.</p>
+      </div>
+    </div>
+    <div class="projet-card reveal">
+      <div class="projet-img">
+        <span class="projet-img-icon"><img src="assets/img/planhouse2.jpeg" alt=""></span>
+        <span class="projet-tag">Commercial</span>
+      </div>
+      <div class="projet-body">
+        <div class="projet-name">Immeuble bureaux — Plateau</div>
+        <p class="projet-desc">Conception et suivi d'un immeuble de bureaux R+3, 1 400 m², structure béton armé. Livré dans les délais contractuels.</p>
+      </div>
+    </div>
+    <div class="projet-card reveal">
+      <div class="projet-img">  
+        <span class="projet-img-icon"><img src="assets/img/planhouse.jpeg" alt="planimg"></span>
+        <span class="projet-tag">Architecture</span>
+      </div>
+      <div class="projet-body">
+        <div class="projet-name">Plan architecturale </div>
+        <p class="projet-desc">Construction d'une villa contemporaine de 320 m² avec piscine sur deux niveaux. Suivi complet de l'étude de sol à la réception.</p>
+      </div>
+    </div>
+    <div class="projet-card reveal">
+      <div class="projet-img">
+        <span class="projet-img-icon"><img src="assets/img/maintenance.png" alt="maintenaceimg"></span>
+        <span class="projet-tag">Rénovation</span>
+      </div>
+      <div class="projet-body">
+        <div class="projet-name">Réhabilitation d'entrepôt</div>
+        <p class="projet-desc">Transformation d'un entrepôt industriel en espace de coworking de 600 m². Restructuration totale et mise aux normes.</p>
+      </div>
+    </div>
+    <div class="projet-card reveal">
+      <div class="projet-img">  
+        <span class="projet-img-icon"><img src="assets/img/planmaison.jpeg" alt="planimg"></span>
+        <span class="projet-tag">Architecture</span>
+      </div>
+      <div class="projet-body">
+        <div class="projet-name">Plan de masse — Résidence 30 lots</div>
+        <p class="projet-desc">Conception architecturale complète d'un lotissement résidentiel : plans, coupes, façades et dossier de permis de construire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-label">Ma méthode</div>
+  <h2 class="section-title reveal">Comment je travaille</h2>
+  <p class="section-sub reveal">Un processus structuré pour sécuriser votre investissement à chaque étape.</p>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-dot"></div>
+      <div class="step-num">Étape 01</div>
+      <div class="step-name">Consultation</div>
+      <p class="step-desc">Premier échange pour comprendre vos besoins, le site, et les contraintes du projet.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-dot"></div>
+      <div class="step-num">Étape 02</div>
+      <div class="step-name">Étude & Devis</div>
+      <p class="step-desc">Analyse technique, plans préliminaires et établissement d'un devis détaillé et transparent.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-dot"></div>
+      <div class="step-num">Étape 03</div>
+      <div class="step-name">Conception</div>
+      <p class="step-desc">Plans d'exécution, dossier technique complet et validation avec le maître d'ouvrage.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-dot"></div>
+      <div class="step-num">Étape 04</div>
+      <div class="step-name">Réalisation</div>
+      <p class="step-desc">Suivi de chantier rigoureux, reporting régulier et coordination des équipes.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-dot"></div>
+      <div class="step-num">Étape 05</div>
+      <div class="step-name">Livraison</div>
+      <p class="step-desc">Réception des travaux, levée des réserves et remise des documents de fin de chantier.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEVIS -->
+<section id="devis">
+  <div class="section-label">Contact</div>
+  <h2 class="section-title reveal">Demandez votre<br>devis gratuit</h2>
+  <div class="devis-wrap">
+    <div class="devis-info reveal">
+      <h3>Parlons de votre projet</h3>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div class="contact-text">
+          <strong>Localisation</strong>
+          Abidjan, Côte d'Ivoire
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div class="contact-text">
+          <strong>Téléphone</strong>
+          +225 XX XX XX XX XX
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div class="contact-text">
+          <strong>Email</strong>
+          contact@tco-btp.com
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🕐</span>
+        <div class="contact-text">
+          <strong>Disponibilité</strong>
+          Lun–Sam, 7h00–18h00
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+       <form class="form-grid" id="devisForm">
+        <!-- Web3Forms : remplace YOUR_ACCESS_KEY par ta clé web3forms.com -->
+        <input type="hidden" name="access_key" value="d5dd2fac-8839-4c41-9fae-c0f0dc654fcb" />
+        <input type="hidden" name="subject" value="Nouvelle demande de devis — TCO BTP" />
+        <input type="hidden" name="from_name" value="Portfolio TCO" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+ 
+        <div class="form-row">
+          <div class="form-group" id="group-nom">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" placeholder="Jean Dupont" />
+            <span class="field-error" id="err-nom">Veuillez saisir votre nom.</span>
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="telephone" placeholder="+225 XX XX XX XX XX" />
+          </div>
+        </div>
+        <div class="form-group" id="group-email">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.com" />
+          <span class="field-error" id="err-email">Veuillez saisir un email valide.</span>
+        </div>
+        <div class="form-group" id="group-type">
+          <label for="type">Type de projet</label>
+          <select id="type" name="type_projet">
+            <option value="">Sélectionner...</option>
+            <option>Construction neuve</option>
+            <option>Architecture / Plans</option>
+            <option>Suivi de travaux</option>
+            <option>Devis & Estimation</option>
+            <option>Rénovation</option>
+            <option>Conseil / Expertise</option>
+            <option>Autre</option>
+          </select>
+          <span class="field-error" id="err-type">Veuillez sélectionner un type de projet.</span>
+        </div>
+        <div class="form-group">
+          <label for="budget">Budget estimé</label>
+          <select id="budget" name="budget">
+            <option value="">Sélectionner...</option>
+            <option>Moins de 5 millions FCFA</option>
+            <option>5 – 20 millions FCFA</option>
+            <option>20 – 100 millions FCFA</option>
+            <option>Plus de 100 millions FCFA</option>
+            <option>À définir</option>
+          </select>
+        </div>
+        <div class="form-group" id="group-message">
+          <label for="message">Description du projet</label>
+          <textarea id="message" name="message" placeholder="Décrivez brièvement votre projet, son emplacement et vos attentes..."></textarea>
+          <span class="field-error" id="err-message">Veuillez décrire votre projet.</span>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">Envoyer ma demande →</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        ✓ Demande envoyée avec succès !<br>Je vous recontacte sous 24h.
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="form-success" id="formSuccess">
+        ✓ Demande envoyée avec succès !<br>Je vous recontacte sous 24h.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">T<span>C</span>O</div>
+  <div class="footer-copy">© 2025 Traore Cheick Oumar — BTP &amp; Architecture</div>
+  <div class="footer-links">
+    <a href="#hero">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#projets">Projets</a>
+    <a href="#devis">Contact</a>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Retour en haut">↑</button>
+<script>
+   /* ── LOADER ── */
+  const loaderEl = document.getElementById('loader');
+  function hideLoader() { loaderEl.classList.add('hidden'); }
+  // Fallback garanti : même si window.load ne fire pas, on cache après 2s max
+  const loaderFallback = setTimeout(hideLoader, 2000);
+  document.addEventListener('DOMContentLoaded', () => {
+    clearTimeout(loaderFallback);
+    setTimeout(hideLoader, 1400);
+  });
+  // Sécurité supplémentaire si DOMContentLoaded déjà passé
+  if (document.readyState !== 'loading') {
+    clearTimeout(loaderFallback);
+    setTimeout(hideLoader, 1400);
+  }
+ 
+  /* ── NAV SCROLL ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+ 
+  /* ── PROGRESS BAR ── */
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    bar.style.width = pct + '%';
+  });
+ 
+  /* ── HAMBURGER ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+ 
+  /* ── SCROLL REVEAL ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+ 
+  /* ── COUNTER ANIMATION ── */
+  function animateCount(el) {
+    const target = +el.dataset.count;
+    let current = 0;
+    const step = target / 60;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = Math.floor(current) + (el.dataset.count === '100' ? '%' : '+');
+    }, 25);
+  }
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('[data-count]').forEach(animateCount);
+        statObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: .5 });
+  document.querySelectorAll('.hero-stats').forEach(el => statObserver.observe(el));
+ 
+  /* ── FORM VALIDATION & ENVOI WEB3FORMS ── */
+  const form       = document.getElementById('devisForm');
+  const submitBtn  = document.getElementById('submitBtn');
+  const successBox = document.getElementById('formSuccess');
+ 
+  function setError(groupId, errId, show) {
+    const g = document.getElementById(groupId);
+    const e = document.getElementById(errId);
+    if (!g || !e) return;
+    g.classList.toggle('has-error', show);
+    e.style.display = show ? 'block' : 'none';
+  }
+ 
+  function validateForm() {
+    let valid = true;
+ 
+    // Nom
+    const nom = document.getElementById('nom').value.trim();
+    if (nom.length < 2) { setError('group-nom', 'err-nom', true); valid = false; }
+    else setError('group-nom', 'err-nom', false);
+ 
+    // Email
+    const email = document.getElementById('email').value.trim();
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailOk) { setError('group-email', 'err-email', true); valid = false; }
+    else setError('group-email', 'err-email', false);
+ 
+    // Type projet
+    const type = document.getElementById('type').value;
+    if (!type) { setError('group-type', 'err-type', true); valid = false; }
+    else setError('group-type', 'err-type', false);
+ 
+    // Message
+    const msg = document.getElementById('message').value.trim();
+    if (msg.length < 10) { setError('group-message', 'err-message', true); valid = false; }
+    else setError('group-message', 'err-message', false);
+ 
+    return valid;
+  }
+ 
+  // Validation en temps réel champ par champ
+  document.getElementById('nom').addEventListener('input', () => {
+    const v = document.getElementById('nom').value.trim();
+    setError('group-nom', 'err-nom', v.length < 2);
+  });
+  document.getElementById('email').addEventListener('input', () => {
+    const v = document.getElementById('email').value.trim();
+    setError('group-email', 'err-email', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+  });
+  document.getElementById('type').addEventListener('change', () => {
+    setError('group-type', 'err-type', !document.getElementById('type').value);
+  });
+  document.getElementById('message').addEventListener('input', () => {
+    const v = document.getElementById('message').value.trim();
+    setError('group-message', 'err-message', v.length < 10);
+  });
+ 
+  // Un seul écouteur submit — la clé est déjà dans le <input hidden> du HTML
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    if (!validateForm()) return;
+ 
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner"></span>Envoi en cours…';
+ 
+    // FormData lit tous les <input name="..."> du formulaire
+    // y compris access_key hidden — ne pas faire .append() en plus
+    const formData = new FormData(form);
+ 
+    try {
+      const res  = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const json = await res.json();
+ 
+      if (json.success) {
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+      } else {
+        console.error('Web3Forms error:', json);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Envoyer ma demande →';
+        alert('Erreur : ' + (json.message || 'Veuillez réessayer.'));
+      }
+    } catch (err) {
+      console.error('Fetch error:', err);
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Envoyer ma demande →';
+      alert('Problème de connexion. Veuillez réessayer.');
+    }
+  });
+ 
+  /* ── BACK TO TOP ── */
+  const backTop = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('show', window.scrollY > 400);
+  });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>

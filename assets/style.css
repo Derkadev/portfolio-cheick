@@ -477,7 +477,7 @@
       .hero-left { padding: 8rem 5% 5rem; justify-content: flex-end; min-height: 100vh; }
       .hero-stats { position: relative; bottom: auto; margin-top: 2rem; }
       #about { grid-template-columns: 1fr; gap: 3rem; }
-      .about-visual { max-height: 280px; aspect-ratio: unset; }
+      .about-visual { height: 420px; max-height: none; aspect-ratio: unset; width: 100%; }
       .devis-wrap { grid-template-columns: 1fr; gap: 3rem; }
       .form-row { grid-template-columns: 1fr; }
       footer { flex-direction: column; text-align: center; align-items: center; }
